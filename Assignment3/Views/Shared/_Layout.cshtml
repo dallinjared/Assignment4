@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Assignment3</title>
+    <title>@ViewData["Title"]</title>
+    <link rel="shortcut icon" href="~/film_reel.png">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -22,7 +23,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="https://baconsale.com/">Website</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="MyPodcasts">My Podcasts</a>
                         </li>
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AddMovie">Add Movie</a>
                         </li>
@@ -41,8 +42,8 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - Assignment3 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
             <p>Learn about the <a href="https://baconsale.com/">Baconsale Podcast</a>.</p>
+            &copy; 2021 - Assignment3 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

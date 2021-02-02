@@ -22,6 +22,8 @@ namespace Assignment3.Controllers
 
         public IActionResult Privacy() => View();
 
+        public IActionResult MyPodcasts() => View();
+
         [HttpGet]
         public IActionResult AddMovie() => View();
 
