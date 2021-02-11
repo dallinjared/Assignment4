@@ -5,18 +5,11 @@
     ViewData["Title"] = "Submission";
 }
 
-@model Assignment3.Models.MovieForm
+@model Assignment3.Models.RestaurantForm
 
 <div class="text-center">
     <h1 class="display-4">Thank you for your submission!</h1>
-    @if (Model.title != "Independence Day")
-    {
-        <h4>@Model.title has been added to the list.</h4>
-    }
-    else
-    {
-        <h4>Sadly, @Model.title cannot be added to the list as it was improperly assigned the "Most American Movie Ever Made" over Rocky IV. This is unacceptable.</h4>
-    }
-    <p>Check out the list of movies <a asp-action="MovieList">here</a>!</p>
-    <h6><a asp-action="AddMovie">Add Another Movie</a></h6>
+    <h4>@Model.RestaurantName has been added to the list.</h4>
+    <p>Check out the list of restaurants <a asp-action="RestaurantList">here</a>!</p>
+    <h6><a asp-action="AddMovie">Add Another Restaurant</a></h6>
 </div>

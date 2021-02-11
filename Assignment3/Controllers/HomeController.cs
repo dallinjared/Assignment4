@@ -18,24 +18,32 @@ namespace Assignment3.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index() => View();
+        public IActionResult Index()
+        {
+            List<string> restaurantList = new List<string>();
+
+            foreach (TopRestaurants r in TopRestaurants.GetRestaurants())
+            {
+                restaurantList.Add(string.Format($"#{r.RestaurantRanking}: {r.RestaurantName},  {r.FavDish}. {r.RestaurantAddress} {r.RestaurantPhone} <a href ='{r.RestaurantWebsite}'>{r.RestaurantWebsite}</a>"));
+            };
+
+            return View(restaurantList);
+        }
 
         public IActionResult Privacy() => View();
 
-        public IActionResult MyPodcasts() => View();
-
         [HttpGet]
-        public IActionResult AddMovie() => View();
+        public IActionResult AddRestaurant() => View();
 
         [HttpPost]
-        public IActionResult AddMovie(MovieForm movieResponse)
+        public IActionResult AddRestaurant(RestaurantForm restaurantResponse)
         {
-            TempStorage.AddMovie(movieResponse);
-            return View("Confirmation", movieResponse);
+            TempStorage.AddRestaurant(restaurantResponse);
+            return View("Confirmation", restaurantResponse);
         }
 
         [HttpGet]
-        public IActionResult MovieList() => View(TempStorage.MovieForms);
+        public IActionResult RestaurantList() => View(TempStorage.RestaurantForms);
 
         [HttpGet]
         public IActionResult Confirmation() => View();

@@ -1,13 +1,22 @@
 ﻿<Properties StartupConfiguration="{D416DEA0-0053-4EEE-99C5-EAC5C37D56FE}|Default">
   <MonoDevelop.Ide.ItemProperties.Assignment3 PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment3/Models/TempStorage.cs">
+    <Files>
+      <File FileName="Assignment3/Views/Home/Confirmation.cshtml" Line="1" Column="1" />
+      <File FileName="Assignment3/Views/Shared/_Layout.cshtml" />
+      <File FileName="Assignment3/wwwroot/js/site.js" />
+      <File FileName="Assignment3/Controllers/HomeController.cs" />
+      <File FileName="Assignment3/Models/MovieForm.cs" />
+      <File FileName="Assignment3/Models/TempStorage.cs" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Assignment3" expanded="True">
             <Node name="Assignment3" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="HomeController.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="TempStorage.cs" selected="True" />
               </Node>
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />

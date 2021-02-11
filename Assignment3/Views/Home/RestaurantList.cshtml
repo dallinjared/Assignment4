@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Restaurant List";
+}
+
+@model IEnumerable<Assignment3.Models.RestaurantForm>
+
+<div class="text-center table-sm">
+    <h1 class="display-4">Restaurant List</h1>
+    <h2>These are the Restaurant we all enjoy!</h2>
+    <h6><a asp-action="AddRestaurant">Add Another Restaurant</a></h6>
+
+    <table class="table">
+        <caption>List of Restaurants</caption>
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Restaurant Name</th>
+                <th scope="col">Favorite Dish</th>
+                <th scope="col">Restaurant Phone</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (Assignment3.Models.RestaurantForm x in Model)
+            {
+                <tr scope="row">
+                    <td>@x.ClientName</td>
+                    <td>@x.RestaurantName</td>
+                    <td>@x.FavoriteDish</td>
+                    <td>@x.RestaurantPhone</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

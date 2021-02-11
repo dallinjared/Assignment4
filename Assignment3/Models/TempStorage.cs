@@ -5,13 +5,13 @@ namespace Assignment3.Models
 {
     public static class TempStorage
     {
-        private static List<MovieForm> movies = new List<MovieForm>();
+        private static List<RestaurantForm> restaurants = new List<RestaurantForm>();
 
-        public static IEnumerable<MovieForm> MovieForms => movies;
+        public static IEnumerable<RestaurantForm> RestaurantForms => restaurants;
 
-        public static void AddMovie(MovieForm movie)
+        public static void AddRestaurant(RestaurantForm restaurant)
         {
-            movies.Add(movie);
+            restaurants.Add(restaurant);
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dallinjared/Projects/Assignment3/MyFirstASP.NETApp/Assignment3/Assignment3.csproj": {}
+    "/Users/dallinjared/Projects/WebApplication/Assignment4_IS413/Assignment3/MyFirstASP.NETApp/Assignment3/Assignment3.csproj": {}
   },
   "projects": {
-    "/Users/dallinjared/Projects/Assignment3/MyFirstASP.NETApp/Assignment3/Assignment3.csproj": {
+    "/Users/dallinjared/Projects/WebApplication/Assignment4_IS413/Assignment3/MyFirstASP.NETApp/Assignment3/Assignment3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dallinjared/Projects/Assignment3/MyFirstASP.NETApp/Assignment3/Assignment3.csproj",
+        "projectUniqueName": "/Users/dallinjared/Projects/WebApplication/Assignment4_IS413/Assignment3/MyFirstASP.NETApp/Assignment3/Assignment3.csproj",
         "projectName": "Assignment3",
-        "projectPath": "/Users/dallinjared/Projects/Assignment3/MyFirstASP.NETApp/Assignment3/Assignment3.csproj",
+        "projectPath": "/Users/dallinjared/Projects/WebApplication/Assignment4_IS413/Assignment3/MyFirstASP.NETApp/Assignment3/Assignment3.csproj",
         "packagesPath": "/Users/dallinjared/.nuget/packages/",
-        "outputPath": "/Users/dallinjared/Projects/Assignment3/MyFirstASP.NETApp/Assignment3/obj/",
+        "outputPath": "/Users/dallinjared/Projects/WebApplication/Assignment4_IS413/Assignment3/MyFirstASP.NETApp/Assignment3/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/dallinjared/.config/NuGet/NuGet.Config"
